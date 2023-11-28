@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>Navs and containers</title>
+</head>
+
+<body>
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+
+  <div class="container-fluid bg-dark text-light py-5">
+    <div class="container-md">
+      <h1>Grids</h1>
+      <h3 class="lead">To use grid- we need to</h3>
+      <!-- ol>li*3>p -->
+      <ol>
+        <li>
+          <h5>create a row!</h5>
+          <p>This is attached to a div. Its contents will flex.i.e we use it to layour elements horizontally</p>
+        </li>
+        <li>
+          <h5>Put columns inside our row</h5>
+          <p>Our columns must add up to 12 since this bs grid is 12 columns wide.</p>
+        </li>
+        <li>
+          <h5>Make different values for our grids</h5>
+          <p>if we want to change layouts on our grids depending on our view ports, we can do this. By referencing the correct classes</p>
+        </li>
+        <h5>Resources <a href="https://getbootstrap.com/docs/5.3/layout/grid/#example"></a></h5>
+      </ol>
+
+    </div>
+  </div>
+
+<!-- .container-fluid bg-primary.text-light.py-5>.container.my-5>.row -->
+<div class="container-fluid bg-light text-dark py-5">
+  <div class="container my-5">
+    <div class="row">
+      <!-- .col-4*3 makes a div that has 3 things os for 4 dives -->
+      <div class="col-lg-6 col-xl-4 p-3 mb-5">
+        <h3>Title</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A corporis fugit, quas ad porro inventore repudiandae autem omnis, eius molestias nulla. Ipsa esse incidunt sunt tempore consequatur odio! Consectetur, assumenda?</p>
+      </div>
+      <div class="col-lg-6 col-xl-4 p-3 mb-5">
+        <h3>Title</h3>
+        <p>Nulla amet laboriosam eius. Mollitia, veniam officia blanditiis quam possimus suscipit aut voluptatibus, similique consequuntur repellat eligendi pariatur, error voluptate perspiciatis. Amet deserunt possimus vitae debitis, ullam aspernatur molestias placeat.</p>
+      </div>
+      <div class="col-lg-6 col-xl-4 p-3 mb-5">
+        <h3>Title</h3>
+        <p>Similique nam esse maiores tempora laboriosam amet a porro inventore unde consequuntur ab accusantium enim odit magni at distinctio nulla maxime soluta perspiciatis assumenda iusto, facere omnis pariatur molestias. Dolorum.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-primary-subtle border border-primary-rgb text-dark py-5">
+  <div class="container">
+    <div class="row">
+      <!-- Emmet Abbreviation -->
+<!-- .col-4*3>h3{Title}+p>lorem30 -->
+      <!-- .col-3*4>h3{Section}+p>lorem30 -->
+      <div class="col-xl-3 col-md-4">
+        <div class="bg-light rounded-2 ">
+          <img class="img-fluid rounded-2" src="images/bmw-i4-edrive-40-hometeaser-1680x756.jpg.asset.1627454770023.jpeg">
+        <h3>Section</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio adipisci praesentium quod earum, in dolor, placeat eius voluptatibus, neque soluta numquam. Iste odio velit sapiente aspernatur eius maxime illo molestias.</p>
+       
+      </div>
+    </div>
+      <div class="col-xl-3 col-md-4">
+        <div class="bg-light rounded-2">
+        <h3>Section</h3>
+        <p>Rerum nihil placeat saepe illo maxime, vitae sint tenetur totam nemo eligendi. Unde similique amet repudiandae! Quaerat, atque aliquam voluptates quis expedita ad quae, ab architecto ea laudantium ex rem.</p>
+        <img class="img-fluid rounded-2" src="images/bmw-i4-edrive-40-hometeaser-1680x756.jpg.asset.1627454770023.jpeg">
+      </div>
+    </div>
+      <div class="col-xl-3 col-md-4">
+        <div class="bg-light rounded-2">
+        <h3>Section</h3>
+        <p>Sed perspiciatis, minus officia sapiente, tempore laboriosam suscipit libero facilis hic repellat culpa saepe qui aliquid alias ad excepturi harum soluta vitae delectus optio laborum dolor voluptatum fuga? Officia, deserunt!</p>
+        <img class="img-fluid rounded-2" src="images/bmw-i4-edrive-40-hometeaser-1680x756.jpg.asset.1627454770023.jpeg">
+      </div>
+    </div>
+      <div class="col-xl-3 col-md-4">
+        <div class="bg-light rounded-2">
+        <h3>Section</h3>
+        <p>Atque possimus explicabo natus sapiente quasi repellendus harum, dolore consequuntur voluptas. Architecto ut ad nesciunt dolor nostrum repellat adipisci, accusantium veritatis necessitatibus aut tenetur, provident, id mollitia asperiores?</p>
+        <img class="img-fluid rounded-2" src="images/bmw-i4-edrive-40-hometeaser-1680x756.jpg.asset.1627454770023.jpeg">
+      </div>
+      </div>
+
+      <div class="col-xl-3 col-md-4">
+        <div class="bg-light rounded-2">
+        <h3>Section</h3>
+        <p>Atque possimus explicabo natus sapiente quasi repellendus harum, dolore consequuntur voluptas. Architecto ut ad nesciunt dolor nostrum repellat adipisci, accusantium veritatis necessitatibus aut tenetur, provident, id mollitia asperiores?</p>
+        <img class="img-fluid rounded-2" src="images/bmw-i4-edrive-40-hometeaser-1680x756.jpg.asset.1627454770023.jpeg">
+      </div>
+      </div>
+      <div class="col-xl-3 col-md-4">
+        <div class="bg-light rounded-2">
+        <h3>Section</h3>
+        <p>Atque possimus explicabo natus sapiente quasi repellendus harum, dolore consequuntur voluptas. Architecto ut ad nesciunt dolor nostrum repellat adipisci, accusantium veritatis necessitatibus aut tenetur, provident, id mollitia asperiores?</p>
+        <img class="img-fluid rounded-2" src="images/bmw-i4-edrive-40-hometeaser-1680x756.jpg.asset.1627454770023.jpeg">
+      </div>
+      </div>
+      <div class="col-xl-3 col-md-4">
+        <div class="bg-light rounded-2">
+        <h3>Section</h3>
+        <p>Atque possimus explicabo natus sapiente quasi repellendus harum, dolore consequuntur voluptas. Architecto ut ad nesciunt dolor nostrum repellat adipisci, accusantium veritatis necessitatibus aut tenetur, provident, id mollitia asperiores?</p>
+        <img class="img-fluid rounded-2" src="images/bmw-i4-edrive-40-hometeaser-1680x756.jpg.asset.1627454770023.jpeg">
+      </div>
+      </div><div class="col-xl-3 col-md-4">
+        <div class="bg-light rounded-2">
+        <h3>Section</h3>
+        <p>Atque possimus explicabo natus sapiente quasi repellendus harum, dolore consequuntur voluptas. Architecto ut ad nesciunt dolor nostrum repellat adipisci, accusantium veritatis necessitatibus aut tenetur, provident, id mollitia asperiores?</p>
+        <img class="img-fluid rounded-2" src="images/bmw-i4-edrive-40-hometeaser-1680x756.jpg.asset.1627454770023.jpeg">
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- .container-fluid>.row>.col*3>.rounded-3.shadow>h3{title}+p>lorem20  -->
+<div class="container-fluid bg-light-subtle py-5">
+  <div class="conatiner-md">
+  <div class="row">
+    <div class="col-3">
+      <div class="rounded-3 shadow py-5 bg-body">
+        <h3>title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat obcaecati unde neque ipsam tenetur fuga, hic officia praesentium. Vel, eligendi.</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="rounded-3 shadow py-5 bg-body">
+        <h3>title</h3>
+        <p>Sequi repudiandae odio quasi eveniet, voluptatem vitae quibusdam nesciunt libero aliquam quaerat mollitia pariatur eum voluptatum fugiat doloribus sunt reprehenderit!</p>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="rounded-3 shadow py-5 bg-body">
+        <h3>title</h3>
+        <p>Nesciunt similique unde voluptas provident pariatur nihil deserunt, earum voluptatem asperiores modi eos laboriosam, labore non suscipit odio aperiam quam!</p>
+      </div>
+    </div>
+  </div>
+</div> 
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+crossorigin="anonymous"></script>
+
+</body>
+
+</html>

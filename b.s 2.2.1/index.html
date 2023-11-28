@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header #="top">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary bg-gradient border-3 border-bottom py-3">
+            <div class="container-xl">
+                <a class="navbar-brand" href="#">Navbar scroll</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Link</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-dark" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- main top section -->
+    <!-- .container-fluid.bg-primary.text-light.py-5.my-5 -->
+    <div class="container-fluid bg-primary text-light py-5 my-5">
+        <div class="container-xl">
+            <!-- .row>.col*2 -->
+            <div class="row  align-items-center">
+                <div class="col-md-6 ">
+                    <p class="text-uppercase fw-bold fs-6">Get started</p>
+                    <h1 class="display-1 fw-bold lh-1">This is a really great product</h1>
+                    <P class="fw-semibold text-uppercase">It really is a great product</P>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/1.png" class="img-fluid" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- middle -->
+    <!-- .container-lg.py-5>.row>.col-8>p.text-center.text-primey.text-uppercase.fw-bold.f-6 -->
+    <div class="container-lg py-5">
+        <div class="row justify-content-md-center justify-content-sm-center">
+            <div class="col-8 text-center text-md-center">
+                <p class="text-primary text-uppercase fw-bold fs-5">
+                    Get Started
+                </p>
+                <p class="fs-1 fw-semibold">
+                    It really is a great product- Elon would be proud of us
+                </p>
+                <span class="text-muted fs-5">
+                    We're a great bunch of people
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- cards -->
+    <div class="container-lg py-5">
+        <div class="card-body">
+            <div class="row ">
+                <!-- card1  -->
+                <div class="col-xl-4 col-md-4">
+                    <div class="card bg-primary text-light">
+                        <img src="images/2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the
+                                card's content. Some quick example text to build on the card title and make up the bulk
+                                of the
+                                card's content</p>
+                            <a href="#" class="btn btn-light">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- card2  -->
+                <div class="col-xl-4 col-md-4">
+                    <div class="card">
+                        <img src="images/3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of theSome quick example text to build on the card title and make up the make up the S
+                                bulk
+                                of the
+                                card's content
+                                card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- card3  -->
+                <div class="col-xl-4 col-md-4">
+                    <div class="card">
+                        <img src="images/4.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the Some
+                                quick example text to build on the card title and make up the bulk
+                                of the
+                                card's contentbulk
+                                of the
+                                card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- line -->
+    <hr class="border border-1 my-3">
+
+    <!-- stars -->
+    <div class="row my-5 justify-content-sm-center">
+        <div class="col-3 btn-group" role="group" aria-label="basic mixed styles example">
+
+            <button type="button" class="btn btn-outline-warning border-0">
+                <i class="bi bi-star-fill fs-3"></i>
+            </button>
+            <button type="button" class="btn btn-outline-warning border-0">
+                <i class="bi bi-star-fill fs-3"></i>
+            </button>
+            <button type="button" class="btn btn-outline-warning border-0">
+                <i class="bi bi-star-fill fs-3"></i>
+            </button>
+            <button type="button" class="btn btn-outline-warning border-0">
+                <i class="bi bi-star-fill fs-3"></i>
+            </button>
+            <button type="button" class="btn btn-outline-warning border-0">
+                <i class="bi bi-star-fill fs-3"></i>
+            </button>
+
+        </div>
+    </div>
+
+
+   <div class="container-fluid text-dark py-5 my-5">
+    <div class="container-xl">
+        <!-- .row>.col*2 -->
+        <div class="row">
+            <div class="col-md">
+                <img src="images/1.png" class="img-fluid" alt="" />
+            </div>
+            <div class="col-md-6">
+                <p class="text-uppercase fw-bold fs-8 text-primary">Get started</p>
+                <h1 class="fw-bold lh-1 display-5">This is a really great product</h1>
+                <P class="fw-semibold text-uppercase">It really is a great product</P>
+            </div>
+            
+        </div>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
